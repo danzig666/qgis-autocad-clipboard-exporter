@@ -1,0 +1,16 @@
+[general]
+name=AutoCAD Clipboard Exporter
+qgisMinimumVersion=3.34
+description=Copy selected features to the clipboard as an AutoLISP script (entmake POINT / LWPOLYLINE), ready to paste into the AutoCAD command line.
+about=Converts the selected features of the active layer (or of the layers selected in the Layers panel) into an AutoLISP script, in the project CRS. Each QGIS layer becomes an AutoCAD layer (with its color for single-symbol layers); points become POINTs, lines and polygon rings become 2D polylines. Paste into the AutoCAD command line (click in it, then Ctrl+V). Needs AutoLISP (full AutoCAD or AutoCAD LT 2024+). The current layer, object snaps and UCS do not affect the result, and the whole paste is one UNDO step. Counterpart of AutoCAD Clipboard Importer.
+version=1.3.0
+author=Abel Koszeghy
+email=abelke@gmail.com
+experimental=False
+deprecated=False
+tracker=https://github.com/danzig666/qgis-autocad-clipboard-exporter/issues
+repository=https://github.com/danzig666/qgis-autocad-clipboard-exporter
+homepage=https://github.com/danzig666/qgis-autocad-clipboard-exporter
+category=Vector
+icon=icon.png
+supportsQt6=True
